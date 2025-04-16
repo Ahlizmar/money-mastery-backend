@@ -1,0 +1,16 @@
+[
+    {
+      "userId": "u123",
+      "type": "badge",
+      "description": "Completed March Savings Goal",
+      "points": 100,
+      "dateEarned": "2025-03-30T00:00:00.000Z"
+    },
+    {
+      "userId": "u123",
+      "type": "points",
+      "description": "+50 pts — under budget this week",
+      "points": 50,
+      "dateEarned": "2025-04-10T00:00:00.000Z"
+    }
+  ]

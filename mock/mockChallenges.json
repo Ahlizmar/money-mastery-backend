@@ -1,0 +1,18 @@
+[
+    {
+      "userId": "u123",
+      "goal": "Save $100 this month",
+      "status": "in-progress",
+      "progress": 40,
+      "rewardPoints": 50,
+      "createdAt": "2025-04-01T00:00:00.000Z"
+    },
+    {
+      "userId": "u123",
+      "goal": "Reduce dining by 20%",
+      "status": "completed",
+      "progress": 100,
+      "rewardPoints": 100,
+      "createdAt": "2025-03-01T00:00:00.000Z"
+    }
+  ]

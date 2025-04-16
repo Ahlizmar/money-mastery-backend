@@ -1,0 +1,16 @@
+[
+    {
+      "userId": "u123",
+      "amount": 50,
+      "category": "Groceries",
+      "type": "expense",
+      "date": "2025-04-01"
+    },
+    {
+      "userId": "u123",
+      "amount": 30,
+      "category": "Dining",
+      "type": "expense",
+      "date": "2025-04-03"
+    }
+  ]

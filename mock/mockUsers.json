@@ -1,0 +1,14 @@
+[
+    {
+      "userId": "u123",
+      "username": "budgetboss",
+      "email": "test@example.com",
+      "passwordHash": "$2a$10$exampleHashedPasswordHere"
+    },
+    {
+      "userId": "u456",
+      "username": "spender101",
+      "email": "spender@example.com",
+      "passwordHash": "$2a$10$exampleHashForSpender"
+    }
+  ]
