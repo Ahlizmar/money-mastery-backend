@@ -1,28 +1,19 @@
-/**
- * models/Budget.js
- * Mongoose schema for user budgets.
- */
-
 const mongoose = require('mongoose');
 
 const budgetSchema = new mongoose.Schema({
-  userId: {
-    type: String,
-    required: true
-  },
-  category: {
-    type: String,
-    required: true
-  },
-  limit: {
-    type: Number,
-    required: true
-  },
-  month: {
-    type: String,
-    required: true // e.g., "2025-04"
-  }
+  userId: String,
+  category: String,
+  limit: Number,
+  month: String,
 });
 
 const Budget = mongoose.model('Budget', budgetSchema);
-module.exports = Budget;
+
+function getUserBudgets(userId) {
+  return Budget.find({ userId });
+}
+
+module.exports = {
+  Budget,
+  getUserBudgets,
+};
