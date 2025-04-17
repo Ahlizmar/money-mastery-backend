@@ -1,12 +1,8 @@
-// algorithms/smartBudgetingTipsAlgorithm.js
-require('dotenv').config(); // Load environment variables
-
+require('dotenv').config();
 const fetch = require('node-fetch');
 
-// Get OpenAI API key from .env file
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-// Generate 3 budgeting tips using OpenAI based on categorized spending data
 async function getSmartBudgetingTips(spendingData) {
   const userPrompt = `Give 3 personalized budgeting tips based on this spending data:\n${JSON.stringify(spendingData, null, 2)}\nBe short and helpful.`;
 
@@ -29,7 +25,6 @@ async function getSmartBudgetingTips(spendingData) {
 
   const data = await response.json();
   console.log('🔎 OpenAI raw response:', JSON.stringify(data, null, 2));
-
   return data.choices?.[0]?.message?.content?.trim() || '⚠️ No response from OpenAI.';
 }
 
